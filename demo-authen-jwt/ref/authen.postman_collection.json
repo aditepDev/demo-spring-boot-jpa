@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "275d0742-ab87-44d6-9f38-6ef4cc50a316",
+		"name": "authen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14579718"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"username\":\"userSilver\",\n     \"password\":\"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"username\":\"user\",\n     \"password\":\"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://192.168.1.4:8099/login",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"4"
+							],
+							"port": "8099",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "refreshToken",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiNjQyYjE0OC01ODYyLTRmMWEtYTFjMC0yMjI4M2MzMzliZDciLCJleHAiOjE2NTY2MTI4MTQsImlhdCI6MTY1NDAyMDgxNH0.Sz2O5c3lSO8HyvJ92TkO8YBepM4NAn3FMjjqKvKrwoM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8099/refreshToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"refreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register : Silver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"userSilver\",\n    \"password\": \"1234\",\n    \"first_name\": \"sodsi\",\n    \"last_name\": \"jide\",\n    \"phone\": \"0801234567\",\n    \"address\": \"bkk\",\n    \"salary\": 15001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register : Gold",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"userGold\",\n    \"password\": \"1234\",\n    \"first_name\": \"wichi\",\n    \"last_name\": \"khondi\",\n    \"phone\": \"0801234999\",\n    \"address\": \"93 m.3\",\n    \"salary\": 30001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register : Platinum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"userPlatinum\",\n    \"password\": \"1234\",\n    \"first_name\": \"aditep\",\n    \"last_name\": \"campira\",\n    \"phone\": \"0801953293\",\n    \"address\": \"udonthani\",\n    \"salary\": 50001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register : error code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"usererror\",\n    \"password\": \"1234\",\n    \"first_name\": \"aditep\",\n    \"last_name\": \"campira\",\n    \"phone\": \"0801953293\",\n    \"address\": \"udonthani\",\n    \"salary\": 14999\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "member detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmNDE0ODY0MS02MDlhLTRjZWYtYmQxNS0zMjZjZWU1ZGIyN2QiLCJleHAiOjE2NTQwMjk3MzcsImlhdCI6MTY1NDAyODgzN30.ZhdquxgJBaSyyExEHO9DlZtktEEDHNXUddLwdtsxdkI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"username\":\"user1\",\n     \"password\":\"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"member"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

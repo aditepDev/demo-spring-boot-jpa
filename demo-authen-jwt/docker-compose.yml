@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  demo-authen:
+    build: .
+    ports:
+      - "8099:8099"
