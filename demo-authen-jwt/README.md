@@ -48,7 +48,7 @@ payload
     "salary": 30001
 }
 ```
-response Created 200
+response  created 201
 
 ```json
 {
