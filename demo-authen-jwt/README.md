@@ -1,7 +1,41 @@
 # authen-demo
 
-![image](https://drive.google.com/uc?export=view&id=1hcCGEzIYKCVylv6_7AAKtqW6TDrGFrjv)
+![image](https://github.com/aditepDev/demo-authen-jwt/blob/main/ref/Authorization%20Server.drawio.png?raw=true)
 
+## installation step.
+```
+
+cmd
+1. git clone git@github.com:aditepDev/demo-authen-jwt.git
+2. cd demo-authen-jwt
+3. docker-compose up
+
+postman 
+
+file postman
+1. download : " https://github.com/aditepDev/demo-authen-jwt/blob/main/ref/authen.postman_collection.json "
+or
+1.1 ref/ authen.postman_collection.json
+
+2. import
+
+
+สมัครสมาชิก
+- register : Silver
+- register : Gold
+- register : Platinum
+- register : error code
+
+เข้าสู่ระบบ
+- login
+
+ดึงข้อมูสมาชิก
+- member detail : เพิ่ม Headers "Authorization Bearer {access_token}"
+
+ต่ออายุ token
+- refreshToken : เพิ่ม Headers "Authorization Bearer {refresh_token}"
+
+```
 
 ### SQL database
 
@@ -33,6 +67,11 @@ expiration
 
 ```
 
+### data sensitive  
+
+` ข้อมูล salary ปกติจะไม่แสดง `
+
+
 ## POST /register
 
 
@@ -48,7 +87,7 @@ payload
     "salary": 30001
 }
 ```
-response  created 201
+response created 201
 
 ```json
 {
