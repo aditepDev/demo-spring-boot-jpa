@@ -32,3 +32,5 @@ https://www.tablesgenerator.com/markdown_tables
 |   GET  | /bill/{invoiceNo} |             ดูข้อมูลคำสั่งซื้อ            |                                                              -                                                             |       [JSON](https://github.com/aditepDev/assignment-java-boot-camp/blob/feature/week1/api_design/response_body/bill.md)      | 
 |        |                   |                                    |                                                                                                                            |   
 
+
+[ref](https://github.com/up1/course_microservices-3-days/blob/master/slide/01-DESIGN-MICROSERVICE-WORKSHOP.pdf)
